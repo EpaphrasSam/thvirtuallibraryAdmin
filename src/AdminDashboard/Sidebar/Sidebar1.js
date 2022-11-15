@@ -3,7 +3,7 @@ import { SidebarBox, NavBar, SidebarMenu, SidebarProfileIcon, NavLink } from "./
 import AdminProfile from "../../Images/Admin-pana.svg";
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
-// import * as FiIcons from 'react-icons/fi';
+import * as FcIcons from 'react-icons/fc';
 
 function Sidebar1(props) {
 
@@ -47,7 +47,10 @@ function Sidebar1(props) {
                     <span className="title" style={{ display: props.isopen ? "block" : "none" }}>Delete File</span>
                 </NavLink>
 
-
+                <NavLink to="/dashboard/course" >
+                    <span className="icon" style={{ fontSize: props.isopen ? "20px" : "2rem" }}><AiIcons.AiFillBook /></span>
+                    <span className="title" style={{ display: props.isopen ? "block" : "none" }}>All Programmes</span>
+                </NavLink>
 
                 <NavLink to="/logout">
                     <span className="icon" style={{ fontSize: props.isopen ? "20px" : "2rem" }}><AiIcons.AiOutlineLogout /></span>
